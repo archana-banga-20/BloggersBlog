@@ -34,11 +34,11 @@
     "jquery": "^3.2.1",
     "json-server": "^0.12.1",
     "rxjs": "^5.4.2",
+    "copy-webpack-plugin": "^4.2.2",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
     "codelyzer": "~3.2.0",
-    "copy-webpack-plugin": "^4.2.2",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
