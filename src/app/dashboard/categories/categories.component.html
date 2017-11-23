@@ -22,8 +22,8 @@
     <div class="col s12 m12">
       <div class="card horizontal">
         <div>
-          <i style="cursor: pointer" *ngIf="user.favourites.includes(blog.id)=== false" (click)="toggleFav(blog.id,true)" class="small material-icons">favorite_border</i>
-          <i style="cursor: pointer" *ngIf="user.favourites.includes(blog.id) === true" (click)="toggleFav(blog.id,false)" class="small material-icons">favorite</i>
+          <i style="cursor: pointer;color: lightcoral" *ngIf="user.favourites.includes(blog.id)=== false" (click)="toggleFav(blog.id,true)" class="small material-icons">favorite_border</i>
+          <i style="cursor: pointer;color: lightcoral" *ngIf="user.favourites.includes(blog.id) === true" (click)="toggleFav(blog.id,false)" class="small material-icons">favorite</i>
         </div>
         <div class="card-image" style="margin-right: 10px; height: 20%;width: 20%;padding: 10px">
           <img src={{blog.imgUrl}}>
