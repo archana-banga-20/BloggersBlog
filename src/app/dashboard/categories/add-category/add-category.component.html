@@ -1,0 +1,20 @@
+<!--<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>-->
+
+<!-- Modal Structure -->
+<div id="categoryAdd" class="modal modal-fixed-footer" style="height: 40%;width: 50%">
+  <form action="javascript:void(0)">
+  <div class="modal-content">
+    <h4>Create Your Own Category</h4>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="category" #category type="text">
+        <label class="active" for="category">Category</label>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a class="modal-action modal-close waves-effect waves-green btn-flat" (click)="postCategory(category.value)">Submit</a>
+  </div>
+  </form>
+</div>

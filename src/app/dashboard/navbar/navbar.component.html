@@ -1,0 +1,12 @@
+<div style="min-height: 635px">
+  <br/>
+ <!--<div style="padding-top: 10%;">-->
+
+ <div style="margin-top: 35%">
+   <div *ngFor="let item of navItems">
+     <div class="row navSelect" (click) = 'select(item.item,item.id)'>
+       <h4 class="items" style="cursor: pointer;padding-left: 3%" [class.active]="item.item === selectedItem">{{item.item}}</h4>
+     </div>
+   </div>
+ </div>
+</div>

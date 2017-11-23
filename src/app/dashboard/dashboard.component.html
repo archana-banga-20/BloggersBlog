@@ -1,0 +1,20 @@
+<div style="padding: 0;margin: 0">
+  <div class="row" style="padding: 0;margin: 0">
+    <app-dash-header style="padding: 0" [author] = "author"></app-dash-header>
+  </div>
+   <div class="row" style="margin: 0; padding: 0px">
+     <div class="col s2" style="padding: 0;background-color: #375B75">
+       <app-navbar (notify)="select($event)"></app-navbar>
+     </div>
+     <div class="col s10" style="padding: 0;">
+       <div>
+         <div [ngSwitch]="tab">
+           <app-all-blogs [blogs] = "blogs" (favourite)="updateFavourite($event)" [user] ="user" [author] = "author" (update)="editMode($event)" (delete)="deleteBlog($event)" (notify)="select($event)" *ngSwitchCase="1">des1</app-all-blogs>
+           <app-my-blogs [blogs] = "blogs" [user] ="user" (favourite)="updateFavourite($event)" (notify)="select($event)" (update)="editMode($event)" (delete)="deleteBlog($event)" (notify)="select($event)" *ngSwitchCase="2">des2</app-my-blogs>
+           <app-categories [blogs] = "blogs" [user] ="user" (category)="postCategory($event)" (favourite)="updateFavourite($event)" (notify)="select($event)" (update)="editMode($event)" (delete)="deleteBlog($event)" (notify)="select($event)" [categories] = "categories" *ngSwitchCase="3">des3</app-categories>
+           <app-add-blog [images] = "images" [user] ="user" [categories] = "categories" (postUsrImg)="postImages($event)" (notify)="postBlog($event)" *ngSwitchCase="4" [blog] = "newBlog">desc4</app-add-blog>
+         </div>
+       </div>
+     </div>
+   </div>
+</div>

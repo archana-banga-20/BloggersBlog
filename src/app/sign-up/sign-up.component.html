@@ -1,0 +1,74 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-3">
+      <h1>BloggersBlog</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-5"></div>
+    <div class="col-lg-3">
+      <h1 style="font-size: 40px;margin: 0;padding: 0">LogIn</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-5">
+      <h3 style="font-size: 26px;margin: 0;padding: 0">Existing Customer?<a [routerLink] = "['/logIn']">LogIn</a></h3>
+    </div>
+  </div>
+
+  <div style="margin-top: 50px">
+    <div class="col-lg-2"></div>
+    <!--login-->
+    <form action="javascript:void(0)">
+    <div class="col-lg-4">
+      <div class="row" style="margin: 0">
+        <div class="col-lg-4">
+          <input type="text"  placeholder="FirstName" #username style=" width: 300px;font-size: 18px; border:0px; outline:none;padding: 0; border-bottom: 1px solid dodgerblue" onfocus=""><br><br>
+        </div>
+      </div>
+
+      <div class="row" style="margin: 0">
+        <div class="col-lg-4">
+          <input type="text"  placeholder="Email" #email style="width: 300px;font-size: 18px; border:0px; outline:none;padding: 0; border-bottom: 1px solid dodgerblue" onfocus=""><br><br>
+        </div>
+      </div>
+
+      <div class="row" style="margin: 0">
+        <div class="col-lg-4">
+          <input type="password" placeholder="Password" #password style="width: 300px;font-size: 18px; border:0px; outline:none;padding: 0; border-bottom: 1px solid dodgerblue" onfocus="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8">
+          <br><br>
+          <button class="btn btn-default" [routerLink]="['/logIn']" style="width: 300px ;border-radius: 15px;background-color: dodgerblue;color: white;font-size: larger" (click)="postData(username.value,email.value,password.value)">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    </form>
+    <div class="col-lg-1">
+      <hr style="height: 250px;width: 1px; border: 0.5px solid grey;background-color: grey">
+    </div>
+    <div class="col-lg-1"></div>
+    <!--using gmail fb-->
+    <div class="col-lg-4" style="margin-top:4%">
+      <div>
+        <div class="row">
+          <i class="fa fa-facebook-official" style="font-size:48px;color: #3B589D"></i><button class="btn socialBtns" style="color:#3B589D ;border: 2px solid #3B589D;">Continue With Facebook</button>
+        </div>
+        <div class="row">
+          <i class="fa fa-google-plus-square" style="font-size:48px;color:  #D54837"></i><button class="btn socialBtns" style="color:#D54837;border: 2px solid #D54837;">Continue With Google</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-1"></div>
+
+
+  </div>
+
+
+
+</div>

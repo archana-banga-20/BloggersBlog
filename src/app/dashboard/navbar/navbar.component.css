@@ -1,0 +1,11 @@
+.items{
+  color: aliceblue;
+}
+
+.active{
+  color: forestgreen;
+}
+
+div.navSelect:hover {
+  background-color: 	#2A4F69;
+}

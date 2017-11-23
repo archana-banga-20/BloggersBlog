@@ -1,0 +1,12 @@
+.home_back{
+  background: url('../../assets/back.jpg') no-repeat ;
+  background-size:cover ;
+  height: 600px;
+ }
+
+.start_button{
+  border: 1px solid aliceblue; color:aliceblue;border-radius: 10px ; background: transparent;
+  font-size: 30px;padding: 5px;
+
+}
+

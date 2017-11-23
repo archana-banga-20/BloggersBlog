@@ -1,0 +1,148 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Smog",
+      "author": "Anya",
+      "category": "Pollution",
+      "desc": "New Delhi’s air pollution hit dangerous levels as India celebrated Diwali, the Hindu festival of lights",
+      "imgUrl": "http://marketingland.com/wp-content/ml-loads/2016/08/social-media-mobile-icons-snapchat-facebook-instagram-ss-800x450-3-800x450.jpg",
+      "publishDate": "2017/11/20"
+    },
+    {
+      "id": 2,
+      "title": "Tech Crunch",
+      "author": "Anya",
+      "category": "Technology",
+      "desc": "Technology is the collection of techniques, skills, methods, and processes used in the production of goods or services or in the accomplishment of objectives, such as scientific investigation",
+      "imgUrl": "http://www.wolfexperience.com/wp-content/uploads/2016/01/social-media.jpg",
+      "publishDate": "2017/11/21"
+    },
+    {
+      "id": 3,
+      "title": "Kheerganga Trek",
+      "author": "Puneet",
+      "category": "Trekking",
+      "desc": "Its a beutiful trek in Himalaya with max height of 13000 feet",
+      "imgUrl": "http://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2014/11/Kheer-Ganga-Hill-Top.jpg",
+      "publishDate": "2017/11/23"
+    },
+    {
+      "id": 4,
+      "title": "Forgiveness",
+      "author": "Ankit Juneja",
+      "category": "Personality Development",
+      "desc": "Forgiving can self heal a person distressed.",
+      "imgUrl": "https://lh3.googleusercontent.com/brdID0h_9AMs-6HlsKX4GTF3vaEG-HYXkRzxUB_zmaaVXrQd3L3ekrkKwF3RBP0BOm8=w300",
+      "publishDate": "2017/11/23"
+    },
+    {
+      "id": 5,
+      "title": "Demo",
+      "author": "archana",
+      "category": "Personality Development",
+      "desc": "To nhi pata\n",
+      "imgUrl": "https://www.wtfclub.net/wp-content/uploads/2017/03/pollution.jpeg",
+      "publishDate": "2017/11/23"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "archana@gmail.com",
+      "username": "archana",
+      "password": "archana",
+      "favourites": [
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "id": 2,
+      "email": "anya@gmail.com",
+      "username": "anya",
+      "password": "anya",
+      "favourites": [
+        2,
+        3
+      ]
+    },
+    {
+      "email": "annie@gmail.com",
+      "username": "Annie",
+      "password": "annie",
+      "id": 3,
+      "favourites": [
+        3,
+        4
+      ]
+    },
+    {
+      "email": "ankitjuneja@gmx.com",
+      "username": "Ankit",
+      "password": "Loading..",
+      "favourites": [
+        1,
+        3
+      ],
+      "id": 4
+    }
+  ],
+  "categories": [
+    {
+      "category": "Pollution",
+      "id": 1
+    },
+    {
+      "category": "Social",
+      "id": 2
+    },
+    {
+      "category": "Technology",
+      "id": 3
+    },
+    {
+      "category": "Trekking",
+      "id": 4
+    },
+    {
+      "category": "Personality Development",
+      "id": 5
+    },
+    {
+      "category": "Science",
+      "id": 6
+    }
+  ],
+  "images": [
+    {
+      "imgUrl": "http://www.wolfexperience.com/wp-content/uploads/2016/01/social-media.jpg",
+      "id": 1
+    },
+    {
+      "imgUrl": "https://www.wtfclub.net/wp-content/uploads/2017/03/pollution.jpeg",
+      "id": 2
+    },
+    {
+      "imgUrl": "http://marketingland.com/wp-content/ml-loads/2016/08/social-media-mobile-icons-snapchat-facebook-instagram-ss-800x450-3-800x450.jpg",
+      "id": 3
+    },
+    {
+      "imgUrl": "http://www.techiexpert.com/wp-content/uploads/2017/10/How-Technology-Impacts-Work-Culture.png",
+      "id": 4
+    },
+    {
+      "imgUrl": "http://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2014/11/Kheer-Ganga-Hill-Top.jpg",
+      "id": 5
+    },
+    {
+      "imgUrl": "https://lh3.googleusercontent.com/brdID0h_9AMs-6HlsKX4GTF3vaEG-HYXkRzxUB_zmaaVXrQd3L3ekrkKwF3RBP0BOm8=w300",
+      "id": 7
+    },
+    {
+      "imgUrl": "http://scholarspoon.com/wp-content/uploads/2014/03/iiit.jpg",
+      "id": 8
+    }
+  ]
+}

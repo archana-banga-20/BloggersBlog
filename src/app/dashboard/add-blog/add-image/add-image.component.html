@@ -1,0 +1,26 @@
+<!--<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>-->
+
+<!-- Modal Structure -->
+<div id="imageAdd" class="modal modal-fixed-footer">
+  <form action="javascript:void(0)">
+  <div class="modal-content">
+    <h4>Choose Your Image</h4>
+    <div>
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">filter_drama</i>Add Image</div>
+          <div class="collapsible-body"><input type="text" #imgUrl placeholder="Image Url"> <button (click)="postImg(imgUrl.value)">Submit</button></div>
+        </li>
+      </ul>
+    </div>
+   <div class="row" style="overflow: auto">
+      <div>
+        <img *ngFor="let img of images" src={{img.imgUrl}} style="height: 30%;width: 30%;padding: 10px" (click)="setImg(img.imgUrl)" [class.choosing]="selected === img.imgUrl">
+      </div>
+   </div>
+  </div>
+  <div class="modal-footer">
+    <a class="modal-action modal-close waves-effect waves-green btn-flat" (click)="userSelectedImg()">Select</a>
+  </div>
+  </form>
+</div>

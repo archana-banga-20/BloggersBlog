@@ -1,0 +1,58 @@
+<div class="row" style="border: 1px solid black;margin: 0;padding: 10px;">
+
+  <div class="col s3">
+    <h4>Add Post</h4>
+  </div>
+  <div class="input-field col s3">
+    <select materialize="material_select" [materializeSelectOptions]="categories" [(ngModel)]="categorySelect" (ngModelChange)="chooseCategory($event)">
+      <option *ngFor="let category of categories" [value]="category.category"  name="categorySelect">{{category.category}}</option>
+    </select>
+    <label>Select Categories</label>
+  </div>
+
+  <div class="col s2">
+    <button class="btn btn default modal-trigger" data-target="imageAdd" (click)="addImg()">Add Image</button>
+  </div>
+  <div class="col s2 ">
+    <button class="btn btn default" (click)="addPost(blog)">Post</button>
+  </div>
+
+</div>
+
+
+<div style="border: 1px solid black;margin : 0;padding: 0; min-height: 550px;">
+  <div style="margin-left: 15%;margin-top:4%;border: 1px solid black;width: 70%;padding: 10px">
+
+    <div class="row">
+      <div class="input-field col s7">
+        <input id="title" type="text" [(ngModel)] = "blog.title" placeholder="Title">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s4">
+        <div class = "col s12">
+          <div class = "row">
+            <input type="text" class="datepicker" [(ngModel)] = "currentdate">
+          </div>
+        </div>
+      </div>
+      <div class="input-field col s4">
+        <input id="author" type="text" [(ngModel)] = "blog.author" style="text-transform: capitalize" placeholder="Author">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea" [(ngModel)] = "blog.desc" placeholder="Content"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<app-add-image [images] = "images" (selectedImg)="userImg($event)" (userImg)="postImg($event)"></app-add-image>

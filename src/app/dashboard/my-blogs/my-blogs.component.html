@@ -1,0 +1,65 @@
+<div class="row" style="margin:0 0 0 1px;padding: 0 0 0 7%;border: 1px solid black">
+  <div class="col s3">
+    <h4>My Post</h4>
+  </div>
+  <div class="col s2 offset-s6">
+    <button (click)="select()" class="btn btn default" style="margin-top: 10%">New Post</button>
+  </div>
+</div>
+
+<div class="container-fluid" style="padding: 0;margin: 0;border: 1px solid black">
+  <div class="row" style="margin-bottom: 0;padding-bottom: 0">
+    <div class="col s6" (click)="show('myblogs')" [class.active]="selectedtab === 'myblogs'">
+      <h5 style="cursor: pointer;text-align: center" >My Blogs</h5>
+    </div>
+
+    <div class="col s6" (click)="show('myfavourite')" [class.active]="selectedtab === 'myfavourite'">
+     <h5 style="cursor: pointer ;text-align: center"> My Favourites</h5>
+    </div>
+  </div>
+</div>
+
+<div class="row" style="margin:0;flex: 1 1 auto;padding: 0;border: 1px solid black;max-height: 520px;overflow-y: auto;">
+  <div *ngFor="let blog of showableBlogs">
+    <div class="col s12 m12">
+      <div class="card horizontal">
+        <div>
+          <i style="cursor: pointer" *ngIf="user.favourites.includes(blog.id)=== false" (click)="toggleFav(blog.id,true)" class="small material-icons">favorite_border</i>
+          <i style="cursor: pointer" *ngIf="user.favourites.includes(blog.id) === true" (click)="toggleFav(blog.id,false)" class="small material-icons">favorite</i>
+        </div>
+        <div class="card-image" style="margin-right: 10px; height: 20%;width: 20%;padding: 10px">
+          <img src={{blog.imgUrl}}>
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <div class="col s10">
+              <p>{{blog.desc}}</p>
+            </div>
+            <div *ngIf="blog.author.toLowerCase() === user.username.toLowerCase()">
+              <div class="col s1" >
+                <i (click)="deleteBlog(blog.id)" style="cursor: pointer" class="small material-icons">delete</i>
+              </div>
+              <div class="col s1">
+                <i (click)="editMode(blog)" style="cursor: pointer" class="small material-icons">create</i>
+              </div>
+            </div>
+          </div>
+          <div class="card-action">
+            <div class="col s3">
+              <p style="color: chocolate;font-size: large;text-transform: uppercase">{{blog.author}}</p>
+            </div>
+            <div class="col s3">
+              <p style="color: darkcyan;font-size: large;text-transform: capitalize">{{blog.title}}</p>
+            </div>
+            <div class="col s3">
+              <p style="color: cornflowerblue;font-size: large;text-transform: capitalize">{{blog.category}}</p>
+            </div>
+            <div class="col s3">
+              <p style="color: indigo;font-size: large;text-transform: capitalize">Last updated {{blog.publishDate}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
