@@ -3,7 +3,8 @@ import {Http,Headers} from "@angular/http";
 import "rxjs/add/operator/map";
 
 const header = {headers : new Headers({'Content-type' : 'application/json'})}
-const BASE_URL = "http://localhost:3000/images/";
+/*const BASE_URL = "http://localhost:3000/images/";*/
+const BASE_URL = "api/images";
 
 @Injectable()
 export class ImageService {

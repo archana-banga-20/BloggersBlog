@@ -5,8 +5,12 @@ import {CanActivate} from "@angular/router";
 import {forEach} from "@angular/router/src/utils/collection";
 
 const header = {headers : new Headers({'Content-type' : 'application/json'})};
-const BASE_URL = "http://localhost:3000/users";
-const BASE_UPDATE_URL = "http://localhost:3000/users/";
+/*const BASE_URL = "http://localhost:3000/users";
+const BASE_UPDATE_URL = "http://localhost:3000/users/";*/
+
+const BASE_URL = "api/users";
+const BASE_UPDATE_URL = "api/users/";
+
 @Injectable()
 export class CanActivateService implements CanActivate{
   user:any;

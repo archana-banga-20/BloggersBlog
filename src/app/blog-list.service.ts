@@ -3,8 +3,10 @@ import {Http,Headers} from "@angular/http";
 import "rxjs/add/operator/map";
 
 const header = {headers : new Headers({'Content-type' : 'application/json'})}
-const BASE_URL = "http://localhost:3000/blogs";
-const BASE_UPDATE_URL = "http://localhost:3000/blogs/";
+/*const BASE_URL = "http://localhost:3000/blogs";
+const BASE_UPDATE_URL = "http://localhost:3000/blogs/";*/
+const BASE_URL = "api/blogs";
+const BASE_UPDATE_URL = "api/blogs/";
 @Injectable()
 export class BlogListService {
 
