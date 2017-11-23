@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -29,7 +28,6 @@ import {MaterializeDirective, MaterializeModule} from "angular2-materialize";
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent,
     LogInComponent,
     SignUpComponent,
     DashboardComponent,
@@ -52,7 +50,8 @@ import {MaterializeDirective, MaterializeModule} from "angular2-materialize";
     RouterModule.forRoot([
       {path : 'logIn' , component : LogInComponent},
       {path : 'signUp' , component : SignUpComponent},
-      {path : '' , redirectTo  : 'logIn',pathMatch : 'full'},
+      {path : 'home' , component : HomeComponent},
+      {path : '' , redirectTo  : 'home',pathMatch : 'full'},
       {path : 'dashboard', canActivate : [CanActivateService], component:DashboardComponent}
     ])
   ],

@@ -1,9 +1,11 @@
 <div on class="home_back container-fluid">
-<app-header></app-header>
+  <h1 style="color:aliceblue; background: transparent;">BloggersBlog</h1>
+  <h3 style="color:aliceblue; background: transparent;margin-top: 150px;">Let's Start Writing Today</h3>
 
-  <div style="margin-top: 250px;margin-left: 550px">
-    <button class="start_button">Start Now</button>
+  <div style="margin-top: 50px;margin-left: 100px">
+    <button class="start_button" [routerLink] = "['/logIn']">Start Now</button>
   </div>
 </div>
+<router-outlet></router-outlet>
 <!--
 ng-style="{'background-image':'url(/static/'+imgURL+')'}-->
